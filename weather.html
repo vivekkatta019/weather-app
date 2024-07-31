@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search">
+            <h2>Search for Weather</h2>
+            <input type="text" id="cityInput" placeholder="City name">
+            <button id="searchButton">Search</button>
+            <p id="errorMessage" class="hidden">No such place exists</p>
+        </div>
+        <div id="info" class="info hidden">
+            <img id="weatherImage" alt="Weather Image">
+            <div class="weather-details">
+                <p id="cityName"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="tempMin"></p>
+                <p id="tempMax"></p>
+                <p id="feelsLike"></p>
+                <p id="weatherDescription"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
